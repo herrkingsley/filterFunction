@@ -3,6 +3,18 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+a {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: tomato;
+}
+
 .wrapper {
   width: 100%;
 }
