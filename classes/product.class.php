@@ -47,7 +47,7 @@ class Product {
         return $this->price;
     }
 
-    //--------- Price--------------//
+    //--------- Id--------------//
 
     public function setId($id){
         $this->id = $id;

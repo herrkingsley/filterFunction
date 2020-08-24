@@ -20,8 +20,8 @@
     <div class="products">
         <?php 
         Render::renderProduct($klocka); 
-        
-        
+        Render::renderProduct($ring);
+
         ?>
     </div>
 
