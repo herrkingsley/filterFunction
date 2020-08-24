@@ -1,4 +1,29 @@
 p {
-  color: tomato;
+  color: blue;
+}
+
+.product {
+  overflow: hidden;
+  width: 20%;
+  padding: 10px;
+  background-color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__img {
+  max-width: 100%;
+}
+
+.item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 /*# sourceMappingURL=style.css.map */

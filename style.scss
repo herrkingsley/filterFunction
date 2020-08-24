@@ -1,3 +1,23 @@
 p {
-    color: tomato;
+    color: blue;
 }
+
+.product {
+    overflow: hidden;
+    width: 20%;
+    padding: 10px;
+    background-color: gray;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &__img {
+        max-width: 100%;
+    }
+}
+
+.item {
+    flex-grow: 1;
+}
+
+
