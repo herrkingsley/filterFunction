@@ -47,12 +47,20 @@ class Filter {
 //------------------ Reciving all tags------------
 
     public function getAllTags(){
-        $allTags = array();
+        $i = 0;
+        $allTagsArray = array();
+        $allTags = "";
 
         foreach($this->products as $product){
-            $allTags[] = $product->getTags();
+            $i++;
+            $array = $product->getTags();
+            $lastElement = end($array);
+            foreach($product->getTags() as $key => $value){
+                $allTagsArray[] = $value;
+            }
         }
-        return $allTags;
+        return $allTagsArray;
+
     }
 
 }

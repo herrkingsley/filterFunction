@@ -25,6 +25,9 @@
         // Render::renderProduct($klocka2); 
 
         Render::renderList($allProducts->filterByTag("ring")); 
+        Render::renderTagList($allProducts->getAllTags()); 
+        // echo "<br>";
+        // var_dump($allProducts->getAllTags());
         ?>
     </div>
 

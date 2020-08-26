@@ -35,6 +35,20 @@ class Render {
             self::renderProduct($product);
         }
     }
-}
 
+    public static function renderTagList($list){
+        $newTaglist = array();
+        $output = "";
+        
+        foreach($list as $tag){
+            
+            if(!in_array($tag, $newTaglist)) {
+                $newTaglist[] = $tag;
+                $output .= "{$tag} <br>";
+            } 
+        }
+        echo $output;
+    }
+
+}
 
