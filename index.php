@@ -3,6 +3,7 @@
     include("inc/header.inc.php");
     include("classes/product.class.php");
     include("classes/render.class.php");
+    include("classes/filter.class.php");
     include("inc/allProducts.inc.php");
 
 
@@ -19,9 +20,11 @@
 <div class="wrapper">
     <div class="products">
         <?php 
-        Render::renderProduct($klocka); 
-        Render::renderProduct($ring);
+        // Render::renderProduct($klocka); 
+        // Render::renderProduct($ring);
+        // Render::renderProduct($klocka2); 
 
+        Render::renderList($allProducts->filterByTag("ring")); 
         ?>
     </div>
 

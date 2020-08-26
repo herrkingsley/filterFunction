@@ -29,6 +29,12 @@ class Render {
         }
         return $output;
     }
+
+    public static function renderList($list){
+        foreach($list as $product){
+            self::renderProduct($product);
+        }
+    }
 }
 
 
