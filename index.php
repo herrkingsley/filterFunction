@@ -11,8 +11,7 @@
 
 <div class="wrapper">
 
-<?php  include("inc/selectForm.inc.php"); ?>
-<a href="index.php">Alla</a>
+
     <div class="products">
         <?php 
 
@@ -21,16 +20,15 @@
     } else {
         Render::renderList($allProducts->getProducts($klocka)); 
     }
-        // Render::renderProduct($klocka); 
-        // Render::renderProduct($ring);
-        // Render::renderProduct($klocka2); 
+    ?>
+
+    
 
         
-        
-        // echo "<br>";
-        // var_dump($allProducts->getAllTags());
-        ?>
     </div>
+    <div class="select"><?php  include("inc/selectForm.inc.php"); ?>
+    <p>Välj: <a href="index.php">Alla</a></p>
+</div>
 
 </div>
 

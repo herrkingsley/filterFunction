@@ -16,12 +16,15 @@ a:hover {
 }
 
 .wrapper {
-  width: 100%;
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+.select {
+  padding: 20px 0 0 40px;
 }
 
 .products {
-  margin: 0 auto;
-  max-width: 1080px;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
