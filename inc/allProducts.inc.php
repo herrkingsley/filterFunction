@@ -10,7 +10,7 @@ $klocka
 
 $ring = new Product("diamant ring");
 $ring->setDesc("Diamantring 0.5ct 18k guld");
-$ring->setImg("https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-5_large.png?format=webp&v=1530129458");
+$ring->setImg("img/ring.jpg");
 $ring->setPrice("15000");
 $ring->setId("123456");
 // Tags
@@ -21,7 +21,7 @@ $ring->setTags("ring");
 
 $klocka = new Product("armbandsur");
 $klocka->setDesc("Armbandsur Tissot mekaniskt");
-$klocka->setImg("https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-5_large.png?format=webp&v=1530129458");
+$klocka->setImg("img/tissot.jpg");
 $klocka->setPrice("2500");
 $klocka->setId("783456");
 // Tags
@@ -32,7 +32,7 @@ $klocka->setTags("klocka");
 
 $klocka2 = new Product("armbandsur");
 $klocka2->setDesc("Armbandsur omega mekaniskt");
-$klocka2->setImg("https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-5_large.png?format=webp&v=1530129458");
+$klocka2->setImg("img/omega.jpg");
 $klocka2->setPrice("5500");
 $klocka2->setId("7845456");
 // Tags

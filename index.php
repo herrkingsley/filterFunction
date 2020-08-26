@@ -12,6 +12,7 @@
 <div class="wrapper">
 
 <?php  include("inc/selectForm.inc.php"); ?>
+<a href="index.php">Alla</a>
     <div class="products">
         <?php 
 
