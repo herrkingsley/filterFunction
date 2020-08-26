@@ -25,7 +25,7 @@ $klocka->setImg("img/tissot.jpg");
 $klocka->setPrice("2500");
 $klocka->setId("783456");
 // Tags
-$klocka->setTags("Tissot");
+$klocka->setTags("tissot");
 $klocka->setTags("mekanisk");
 $klocka->setTags("klocka");
 
