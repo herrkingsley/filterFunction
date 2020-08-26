@@ -30,6 +30,7 @@ class Filter {
         return $this->products;
     }
 
+
 // ----------- Finding a tag among all products
 
     public function filterByTag($tag) {

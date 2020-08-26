@@ -44,7 +44,7 @@ class Render {
             
             if(!in_array($tag, $newTaglist)) {
                 $newTaglist[] = $tag;
-                $output .= "{$tag} <br>";
+                $output .= "<option value='{$tag}'>{$tag}</option>";
             } 
         }
         echo $output;

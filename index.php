@@ -9,23 +9,23 @@
 
 ?>
 
-<?php 
-
-// echo Render::renderProduct($klocka);
-// echo "\n";
-// echo Render::renderProduct($ring);
-
-?>
-
 <div class="wrapper">
+
+<?php  include("inc/selectForm.inc.php"); ?>
     <div class="products">
         <?php 
+
+    if(isset($_GET['submit'])){
+        Render::renderList($allProducts->filterByTag("{$_GET['tags']}")); 
+    } else {
+        Render::renderList($allProducts->getProducts($klocka)); 
+    }
         // Render::renderProduct($klocka); 
         // Render::renderProduct($ring);
         // Render::renderProduct($klocka2); 
 
-        Render::renderList($allProducts->filterByTag("ring")); 
-        Render::renderTagList($allProducts->getAllTags()); 
+        
+        
         // echo "<br>";
         // var_dump($allProducts->getAllTags());
         ?>
