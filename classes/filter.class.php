@@ -32,15 +32,6 @@ class Filter {
 
 // ----------- Finding a tag among all products
 
-    // public function filterByTag($tag) {
-    //     $taggedProducts = array(); //empty array to fill in taged products
-        
-    //     foreach($this->products as $product) {
-    //         if(in_array(strtolower($tag), $product->getTags())) {
-    //             $taggedProducts[] = $product;
-    //      }
-    // }
-
     public function filterByTag($tag) {
         $taggedProducts = array();
 
@@ -51,6 +42,17 @@ class Filter {
             }
         }
         return $taggedProducts;
+    }
+
+//------------------ Reciving all tags------------
+
+    public function getAllTags(){
+        $allTags = array();
+
+        foreach($this->products as $product){
+            $allTags[] = $product->getTags();
+        }
+        return $allTags;
     }
 
 }
