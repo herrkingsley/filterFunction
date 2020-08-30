@@ -20,24 +20,24 @@ $ring->setTags("guld");
 $ring->setTags("ring");
 
 $klocka = new Product("armbandsur");
-$klocka->setDesc("Armbandsur Tissot mekaniskt");
-$klocka->setImg("img/tissot.jpg");
+$klocka->setDesc("Armbandsur Swiss Military mekaniskt");
+$klocka->setImg("img/swiss.jpg");
 $klocka->setPrice("2500");
 $klocka->setId("783456");
 // Tags
-$klocka->setTags("tissot");
+$klocka->setTags("swiss");
 $klocka->setTags("mekanisk");
 $klocka->setTags("klocka");
 
 
 $klocka2 = new Product("armbandsur");
-$klocka2->setDesc("Armbandsur omega mekaniskt");
-$klocka2->setImg("img/omega.jpg");
+$klocka2->setDesc("Armbandsur Timex Quartz");
+$klocka2->setImg("img/timex.jpg");
 $klocka2->setPrice("5500");
 $klocka2->setId("7845456");
 // Tags
-$klocka2->setTags("omega");
-$klocka2->setTags("mekanisk");
+$klocka2->setTags("timex");
+$klocka2->setTags("quartz");
 $klocka2->setTags("klocka");
 
 $allProducts = new Filter("All products");
